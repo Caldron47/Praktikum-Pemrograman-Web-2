@@ -1,0 +1,484 @@
+ERROR - 2023-05-30 07:27:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#9 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#11 {main}
+CRITICAL - 2023-05-30 07:27:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `crud`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTIKUM7\\public\\index.php')
+ERROR - 2023-05-30 07:27:56 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#9 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#11 {main}
+CRITICAL - 2023-05-30 07:27:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `crud`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTIKUM7\\public\\index.php')
+ERROR - 2023-05-30 07:28:35 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#9 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#11 {main}
+CRITICAL - 2023-05-30 07:28:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `crud`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTIKUM7\\public\\index.php')
+ERROR - 2023-05-30 07:29:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#9 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#11 {main}
+CRITICAL - 2023-05-30 07:29:18 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `crud`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTIKUM7\\public\\index.php')
+ERROR - 2023-05-30 07:29:41 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#9 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#11 {main}
+CRITICAL - 2023-05-30 07:29:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `crud`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTIKUM7\\public\\index.php')
+ERROR - 2023-05-30 07:32:37 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#9 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#11 {main}
+CRITICAL - 2023-05-30 07:32:37 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `crud`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTIKUM7\\public\\index.php')
+ERROR - 2023-05-30 07:32:41 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#9 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#11 {main}
+CRITICAL - 2023-05-30 07:32:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `crud`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTIKUM7\\public\\index.php')
+ERROR - 2023-05-30 07:33:58 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#9 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#11 {main}
+CRITICAL - 2023-05-30 07:33:58 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `crud`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTIKUM7\\public\\index.php')
+ERROR - 2023-05-30 07:33:59 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#9 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#11 {main}
+CRITICAL - 2023-05-30 07:33:59 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `crud`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTIKUM7\\public\\index.php')
+ERROR - 2023-05-30 07:42:47 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#9 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#11 {main}
+CRITICAL - 2023-05-30 07:42:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `crud`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTIKUM7\\public\\index.php')
+ERROR - 2023-05-30 07:43:05 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#9 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\PRAKTIKUM7\app\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+#7 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+#8 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\PRAKTIKUM7\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\PRAKTIKUM7\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTI...')
+#11 {main}
+CRITICAL - 2023-05-30 07:43:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `crud`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\CRUDController.php(14): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CRUDController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CRUDController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\PRAKTIKUM7\\public\\index.php')
